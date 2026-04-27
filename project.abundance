@@ -36,8 +36,8 @@
     },
     {
       "atomType": "Constant",
-      "x": 0.26490066225165565,
-      "y": 0.6148282097649186,
+      "x": 0.26269315673289184,
+      "y": 0.6094032549728753,
       "uniqueID": "id-8",
       "name": "Height",
       "value": 6
@@ -92,10 +92,36 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.5445180279617365,
-      "y": 0.5424954792043399,
+      "x": 0.5459896983075792,
+      "y": 0.546112115732369,
       "uniqueID": "id-22",
       "name": "LongPiece",
+      "ioValues": [
+        {
+          "name": "LongLen",
+          "ioValue": 60
+        },
+        {
+          "name": "Height",
+          "ioValue": 6
+        },
+        {
+          "name": "input_2",
+          "ioValue": 0.5
+        },
+        {
+          "name": "input_3",
+          "ioValue": 8
+        },
+        {
+          "name": "input_4",
+          "ioValue": 0.5
+        },
+        {
+          "name": "input_5",
+          "ioValue": 1
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -112,26 +138,140 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.44150110375275936,
-          "y": 0.5913200723327305,
+          "x": 0.44076526857983817,
+          "y": 0.593128390596745,
           "uniqueID": "id-26",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 10
+              "ioValue": 60,
+              "currentEquation": "10"
             },
             {
               "name": "y length",
-              "ioValue": 10
+              "ioValue": 6
             }
           ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-32",
+          "name": "LongLen",
+          "type": "any"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-35",
+          "name": "Height",
+          "type": "any"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-38",
+          "name": "input_2",
+          "type": "any"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.4307692307692308,
+          "uniqueID": "id-41",
+          "name": "input_3",
+          "type": "any"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.5230769230769231,
+          "uniqueID": "id-44",
+          "name": "input_4",
+          "type": "any"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.6153846153846154,
+          "uniqueID": "id-47",
+          "name": "input_5",
+          "type": "any"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.25165562913907286,
+          "y": 0.7522603978300181,
+          "uniqueID": "id-50",
+          "name": "x/y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 6
+            },
+            {
+              "name": "y",
+              "ioValue": 2
+            }
+          ],
+          "currentEquation": "x/y"
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-32",
+          "ap2ID": "id-26"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-35",
+          "ap2ID": "id-26"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-35",
+          "ap2ID": "id-50"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "LongLen",
+      "ap1ID": "id-4",
+      "ap2ID": "id-22"
+    },
+    {
+      "ap2Name": "Height",
+      "ap1ID": "id-8",
+      "ap2ID": "id-22"
+    },
+    {
+      "ap2Name": "input_2",
+      "ap1ID": "id-10",
+      "ap2ID": "id-22"
+    },
+    {
+      "ap2Name": "input_3",
+      "ap1ID": "id-12",
+      "ap2ID": "id-22"
+    },
+    {
+      "ap2Name": "input_4",
+      "ap1ID": "id-14",
+      "ap2ID": "id-22"
+    },
+    {
+      "ap2Name": "input_5",
+      "ap1ID": "id-18",
+      "ap2ID": "id-22"
+    }
+  ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
