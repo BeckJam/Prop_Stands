@@ -1,13 +1,138 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Prop_Stands",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Prop_Stands",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.2700515084621045,
+      "y": 0.46654611211573244,
+      "uniqueID": "id-4",
+      "name": "LongLen",
+      "value": 60
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.26490066225165565,
+      "y": 0.5479204339963833,
+      "uniqueID": "id-6",
+      "name": "ShortLen",
+      "value": 20
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.26490066225165565,
+      "y": 0.6148282097649186,
+      "uniqueID": "id-8",
+      "name": "Height",
+      "value": 6
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.26195732155997054,
+      "y": 0.6962025316455697,
+      "uniqueID": "id-10",
+      "name": "Thickness",
+      "value": 0.5
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.2560706401766004,
+      "y": 0.7721518987341771,
+      "uniqueID": "id-12",
+      "name": "NotchInset",
+      "value": 8
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.24650478292862402,
+      "y": 0.8390596745027125,
+      "uniqueID": "id-14",
+      "name": "NotchWidth",
+      "value": 0.5
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.2376747608535688,
+      "y": 0.9041591320072332,
+      "uniqueID": "id-16",
+      "name": "NotchDepth",
+      "value": 3
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.2288447387785136,
+      "y": 0.9710669077757685,
+      "uniqueID": "id-18",
+      "name": "CornerRadius",
+      "value": 1
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.25533480500367917,
+      "y": 0.33815551537070526,
+      "uniqueID": "id-20",
+      "name": "FoamGap",
+      "value": 0.984
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.5445180279617365,
+      "y": 0.5424954792043399,
+      "uniqueID": "id-22",
+      "name": "LongPiece",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-24",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.44150110375275936,
+          "y": 0.5913200723327305,
+          "uniqueID": "id-26",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 10
+            },
+            {
+              "name": "y length",
+              "ioValue": 10
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
