@@ -138,8 +138,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.44076526857983817,
-          "y": 0.593128390596745,
+          "x": 0.4473877851361295,
+          "y": 0.6021699819168174,
           "uniqueID": "id-26",
           "ioValues": [
             {
@@ -203,8 +203,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.25165562913907286,
-          "y": 0.7522603978300181,
+          "x": 0.23252391464311992,
+          "y": 0.8860759493670887,
           "uniqueID": "id-50",
           "name": "x/y",
           "ioValues": [
@@ -218,6 +218,60 @@
             }
           ],
           "currentEquation": "x/y"
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.35540838852097134,
+          "y": 0.8788426763110306,
+          "uniqueID": "id-54",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 3
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.4753495217071376,
+          "y": 0.7757685352622061,
+          "uniqueID": "id-57",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -30
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.2671081677704194,
+          "y": 0.6365280289330922,
+          "uniqueID": "id-63",
+          "name": "-x/y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 60
+            },
+            {
+              "name": "y",
+              "ioValue": 2
+            }
+          ],
+          "currentEquation": "-x/y"
         }
       ],
       "allConnectors": [
@@ -225,6 +279,11 @@
           "ap2Name": "x length",
           "ap1ID": "id-32",
           "ap2ID": "id-26"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-32",
+          "ap2ID": "id-63"
         },
         {
           "ap2Name": "y length",
@@ -235,6 +294,21 @@
           "ap2Name": "x",
           "ap1ID": "id-35",
           "ap2ID": "id-50"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-50",
+          "ap2ID": "id-54"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-54",
+          "ap2ID": "id-57"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-63",
+          "ap2ID": "id-57"
         }
       ],
       "fileTypeVersion": 1
